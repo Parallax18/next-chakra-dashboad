@@ -69,7 +69,7 @@ export default function SideDrawer() {
         size={'xs'}
       >
     
-        <DrawerContent className='bg-red-900' sx={{background: '#F9F9F9'}}>
+        <DrawerContent sx={{background: '#F9F9F9', shadow: 'none'}}>
           {/* <DrawerCloseButton /> */}
           <DrawerHeader>Hello, Sam</DrawerHeader>
 
@@ -80,10 +80,11 @@ export default function SideDrawer() {
           </DrawerBody>
 
           <DrawerFooter>
-            {/* <Button variant='outline' mr={3} onClick={onClose}>
-              Cancel
+            <Button variant='outline' mr={3} color="red" onClick={onClose}>
+              <BiLogOut />
+              Logout
             </Button>
-            <Button colorScheme='blue'>Save</Button> */}
+        
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

@@ -21,8 +21,8 @@ export default function DrawerItem({icon, buttonText, options}) {
     <Fragment>
       {options ? (
          <Accordion allowToggle w="full">
-         <AccordionItem w="full"  border="none" onClick={toggleAccordion}>
-             <AccordionButton className='space-x-5' w="full" background="none" outline={"none"} _focus={{outline: 'none'}} _active={{outline: 'none'}}>
+         <AccordionItem w="full"  border="none" >
+             <AccordionButton onClick={toggleAccordion} className='space-x-5' w="full" background="none" outline={"none"} _focus={{outline: 'none'}} _active={{outline: 'none'}}>
                
                 <div className={accordionIsOpen && 'bg-indigo-900 rounded-full h-12 w-12 p-3 flex items-center justify-center'} >
                  <Icon as={icon}  color={accordionIsOpen ? "#ffff" : "#c4c4c4"} w={6} h={6}/>
